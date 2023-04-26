@@ -8,6 +8,7 @@ import Ourgames from './components/Ourgames';
 import Video from './components/Video';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Timberman from './components/Timberman';
 
 
 function App() {
@@ -28,9 +29,12 @@ function App() {
      <About aboutTitle={t("aboutTitle")}
             aboutText={t('aboutText')}/>
      <Ourgames titleGames={t('titleGames')}
-                textGames={t('textGames')}
-                text2Games={t("text2Games")}/>
-      <Video/>
+                timberlText={t('timberlText')}
+                text2Games={t("text2Games")}
+                timberlTitle={t("timberlTitle")}/>
+      {/* <Video/> */}
+      {/* <Timberman timbTitle={t("timberlTitle")}
+                 timbText={t('timberlText')}/> */}
       <Contact titleContact={t("titleContact")}
                inputName = {t("inputName")}
                inputEmail = {t("inputEmail")}
